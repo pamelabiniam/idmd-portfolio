@@ -14,14 +14,18 @@ function draw() {
   fill(255, 0, 0);
   if (keyIsPressed) {
     if (keyCode == RIGHT_ARROW) {
-      x += +3;
-      if (x >= width-dia/2) x = width-dia/2
+      x += 3;
+      // increments of three
+      if (x >= width - dia / 2) x = width - dia / 2;
     } else if (keyCode == LEFT_ARROW) {
       x -= 3;
+      if (x <= dia / 2) x = dia / 2;
     } else if (keyCode == DOWN_ARROW) {
       y += 3;
+      if (y >= height - dia / 2) y = height - dia / 2;
     } else if (keyCode == UP_ARROW) {
       y -= 3;
+      if (y <= dia / 2) y = dia / 2;
     }
   }
   ellipse(x, y, dia, dia);
