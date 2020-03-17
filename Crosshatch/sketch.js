@@ -7,7 +7,7 @@ function draw() {
   for (i = 0; i < mouseX; i += 5) {
     for (j = 0; j < mouseY; j += 5) {
       line(0, i, mouseX, i);
-      line(j,0, j, mouseY)
+      line(j, 0, j, mouseY);
     }
   }
 
