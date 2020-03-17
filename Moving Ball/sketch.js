@@ -1,5 +1,5 @@
 var x = 276;
-var dir = 3;
+var dir = 5;
 
 function setup() {
   createCanvas(300, 200);
@@ -9,10 +9,10 @@ function setup() {
 function draw() {
   background(120, 200, 255);
   noStroke();
-  
+
   ellipse(x, 100, 50, 50);
   if (x > 275 || x < 25) {
-    fill((random(0,255)), (random(0,70)),(random(0, 77)));
+    fill((random(0, 255)), (random(0, 255)), (random(0, 255)));
     dir = dir * -1;
   }
   x = x + dir;
